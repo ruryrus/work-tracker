@@ -242,9 +242,19 @@
       ? '<ul class="item-list">' + visible.map(itemCard).join('') + '</ul>'
       : '<p class="empty">이 상태의 작업이 없어요.</p>';
 
-    $('detail-body').innerHTML = head + body;
+    var filterNote = '';
+    if (FILTER !== 'all') {
+      var label = (FILTERS.filter(function (f) { return f.id === FILTER; })[0] || {}).label || FILTER;
+      filterNote = '<p class="filter-note"><span>‘' + esc(label) + '’ ' + visible.length + '개만 보는 중</span>' +
+        '<button type="button" data-clear-filter>전체 보기</button></p>';
+    }
+
+    $('detail-body').innerHTML = head + filterNote + body;
     $('home-view').hidden = true;
     $('detail-view').hidden = false;
+
+    var clearBtn = $('detail-body').querySelector('[data-clear-filter]');
+    if (clearBtn) clearBtn.addEventListener('click', function () { setFilter('all'); });
   }
 
   function render() {
