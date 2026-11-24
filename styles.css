@@ -503,11 +503,11 @@ main { padding: 4px 18px 40px; }
   content: "";
   position: absolute;
   left: 4px;
-  top: 7px;
-  bottom: 9px;
+  top: 10px;
+  bottom: 12px;
   width: 2px;
   border-radius: 2px;
-  background: var(--line);
+  background: color-mix(in srgb, var(--muted-2) 55%, var(--surface));
 }
 
 .timeline li {
