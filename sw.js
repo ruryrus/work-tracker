@@ -3,7 +3,7 @@
  * - data/works.json: 네트워크 우선(최신 진행상황이 먼저) + 실패하면 캐시
  * 모든 경로는 상대경로라 https://<user>.github.io/<repo>/ 어디에 올려도 동작합니다.
  */
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL_CACHE = 'work-tracker-shell-' + VERSION;
 const DATA_CACHE = 'work-tracker-data-' + VERSION;
 

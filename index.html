@@ -48,8 +48,37 @@
         <div id="detail-body"></div>
       </section>
 
-      <p class="foot">data/works.json 만 고치면 앱에 바로 반영됩니다.</p>
+      <div class="foot">
+        <button class="hidden-toggle" id="hidden-toggle" type="button" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.4-6 9-6 9 6 9 6-3.4 6-9 6-9-6-9-6z" /><circle cx="12" cy="12" r="2.6" /></svg>
+          숨긴 항목 <span id="hidden-count">0</span>개 보기
+        </button>
+        <p class="foot-note">data/works.json 만 고치면 앱에 바로 반영됩니다.</p>
+      </div>
     </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast-text" id="toast-text"></span>
+    <button class="toast-action" id="toast-action" type="button" hidden>실행 취소</button>
+  </div>
+
+  <div class="sheet" id="hidden-sheet" role="dialog" aria-modal="true" aria-labelledby="hidden-title" hidden>
+    <div class="sheet-backdrop" id="hidden-backdrop"></div>
+    <div class="sheet-panel">
+      <div class="sheet-head">
+        <h2 id="hidden-title">숨긴 항목</h2>
+        <button class="sheet-close" id="hidden-close" type="button" aria-label="닫기">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </div>
+      <p class="sheet-desc">숨긴 항목은 목록·요약 숫자·플랫폼 진행률에서 빠집니다. 원본 <code>data/works.json</code>에서 지우려면 <b>숨긴 목록 복사</b>를 눌러 저에게 붙여넣어 주세요.</p>
+      <ul class="hidden-list" id="hidden-list"></ul>
+      <div class="sheet-foot">
+        <button class="btn-ghost" id="hidden-copy" type="button">숨긴 목록 복사</button>
+        <button class="btn-ghost danger" id="hidden-restore-all" type="button">전체 복원</button>
+      </div>
+    </div>
   </div>
 
   <script src="./app.js"></script>
