@@ -65,17 +65,14 @@
   }
 
   function progress(items) {
-    var done = 0;
-    var total = 0;
+    var weight = { approved: 100, review: 60, user_action: 35, rejected: 15 };
+    if (!items.length) return 0;
+    var sum = 0;
     items.forEach(function (it) {
-      (it.steps || []).forEach(function (s) {
-        total += 1;
-        if (s.state === 'done') done += 1;
-        else if (s.state === 'current') done += 0.5;
-      });
+      var w = weight[it.status];
+      sum += typeof w === 'number' ? w : 35;
     });
-    if (!total) return 0;
-    return Math.round((done / total) * 100);
+    return Math.round(sum / items.length);
   }
 
   function matches(item) {
@@ -160,7 +157,7 @@
     if (c.rejected) parts.push('<span><i class="tick rejected"></i>반려 ' + c.rejected + '</span>');
     var dim = FILTER !== 'all' && shown === 0 ? ' style="opacity:.45"' : '';
     return '<li>' +
-      '<button class="p-card" type="button" data-platform="' + esc(p.id) + '"' + dim + '>' +
+      '<button class="p-card" type="button" data-platform="' + esc(p.id) + '" style="--c:' + esc(p.color || '#6C5CE7') + '"' + dim + '>' +
         '<span class="p-emoji" style="--c:' + esc(p.color || '#6C5CE7') + '">' + esc(p.emoji || '📁') + '</span>' +
         '<span class="p-main">' +
           '<span class="p-name">' + esc(p.name) + '</span>' +
@@ -229,7 +226,7 @@
     if (c.rejected) pills.push('<span class="pill"><i class="rejected"></i>반려·보완 ' + c.rejected + '</span>');
     pills.push('<span class="pill">진행률 ' + pct + '%</span>');
 
-    var head = '<div class="d-head">' +
+      '<div class="d-head" style="--c:' + esc(p.color || '#6C5CE7') + '">' +
       '<div class="d-head-top">' +
         '<span class="p-emoji" style="--c:' + esc(p.color || '#6C5CE7') + '">' + esc(p.emoji || '📁') + '</span>' +
         '<div><h2>' + esc(p.name) + '</h2><p class="sub">' + esc(p.studio || '') + '</p></div>' +

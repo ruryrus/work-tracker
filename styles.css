@@ -268,6 +268,7 @@ main { padding: 4px 18px 40px; }
   place-items: center;
   font-size: 22px;
   line-height: 1;
+  background: var(--surface-2);
   background: color-mix(in srgb, var(--c) 13%, var(--surface));
   border: 1px solid color-mix(in srgb, var(--c) 18%, transparent);
 }
@@ -327,7 +328,8 @@ main { padding: 4px 18px 40px; }
   display: block;
   height: 100%;
   border-radius: 99px;
-  background: linear-gradient(90deg, color-mix(in srgb, var(--c) 65%, #fff), var(--c));
+  background: var(--c, var(--accent));
+  background: linear-gradient(90deg, color-mix(in srgb, var(--c) 62%, #fff), var(--c));
 }
 
 .p-pct {
