@@ -3,7 +3,7 @@
   "app": {
     "title": "지예 작업 현황",
     "subtitle": "스톡·이모티콘·프린터블 부업 진행판",
-    "updatedAt": "2026-11-24T13:30:00+09:00",
+    "updatedAt": "2026-11-24T13:45:00+09:00",
     "timezone": "Asia/Seoul"
   },
   "statusOrder": ["user_action", "review", "approved", "rejected"],
@@ -225,7 +225,7 @@
       "color": "#FA0F00",
       "link": "https://contributor.stock.adobe.com/en/uploads",
       "linkLabel": "어도비 스톡 업로드",
-      "note": "11-23 14:58 기준: In review 6건 · Not accepted 10건 · 포트폴리오 승인 0건. 심사는 최대 8주까지 걸릴 수 있다는 안내. 4MP 이상 · sRGB · 'Created using generative AI tools' 체크 · 키워드 40개. 'Similar content' 거절이 잦아 소재 차별화가 관건.",
+      "note": "11-24 13:42 기준: In review 4건 · Not accepted 12건 · 포트폴리오 승인 0건. 2차 4종은 전부 미승인으로 종결(Similar content 2 · Quality Issues 2). 심사는 최대 8주 안내. 4MP 이상 · sRGB · 'Created using generative AI tools' 체크 · 키워드 40개. 같은 파일·업스케일 보완 재제출은 반복 실패 위험.",
       "items": [
         {
           "id": "adobe-v3",
@@ -250,19 +250,19 @@
         {
           "id": "adobe-v2",
           "title": "2차 2종 (한지 격자 등불 · 약과·한과 접시)",
-          "subtitle": "고화질 재제작분 중 남은 2건",
-          "status": "review",
-          "meta": "ID 2256461045 (6.14MP) · 2256462156 (9.19MP)",
-          "owner": "심사 대기",
-          "updatedAt": "2026-11-20",
+          "subtitle": "11-24 Quality Issues로 미승인 — 2차 배치 종결",
+          "status": "rejected",
+          "meta": "ID 2256461045 (6.14MP) · 2256462156 (9.19MP) · 사유 Quality Issues",
+          "owner": "미승인 (종결)",
+          "updatedAt": "2026-11-24",
           "steps": [
             { "label": "미세 질감 재생성 + 경계 재구성 + 고화질 업스케일", "state": "done", "date": "11-20" },
             { "label": "지예 님 CAPTCHA 통과 후 제출", "state": "done", "date": "11-20 13:37" },
-            { "label": "In review", "state": "current" },
-            { "label": "승인", "state": "todo" }
+            { "label": "In review", "state": "done", "date": "11-20" },
+            { "label": "미승인 — Quality Issues (노출·소프트 포커스·필터/노이즈)", "state": "current", "date": "11-24" }
           ],
-          "nextAction": "심사 결과 확인",
-          "note": "",
+          "nextAction": "없음 — 같은 방식 재제출 보류, 새 배치는 4MP+ 원본 생성부터",
+          "note": "11-24 13:42 확인. 증빙: browser/adobe_notaccepted_12_as05_v2_quality-2026-11-24-134248.png · browser/adobe_notaccepted_12_as08_v2_quality-2026-11-24-134240.png",
           "files": ["downloads/adobe_stock_ready/"]
         },
         {
