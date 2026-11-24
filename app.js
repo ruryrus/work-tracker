@@ -226,7 +226,7 @@
     if (c.rejected) pills.push('<span class="pill"><i class="rejected"></i>반려·보완 ' + c.rejected + '</span>');
     pills.push('<span class="pill">진행률 ' + pct + '%</span>');
 
-      '<div class="d-head" style="--c:' + esc(p.color || '#6C5CE7') + '">' +
+    var head = '<div class="d-head" style="--c:' + esc(p.color || '#6C5CE7') + '">' +
       '<div class="d-head-top">' +
         '<span class="p-emoji" style="--c:' + esc(p.color || '#6C5CE7') + '">' + esc(p.emoji || '📁') + '</span>' +
         '<div><h2>' + esc(p.name) + '</h2><p class="sub">' + esc(p.studio || '') + '</p></div>' +
