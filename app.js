@@ -377,9 +377,10 @@
     if (c.review) parts.push('<span><i class="tick review"></i>심사중 ' + c.review + '</span>');
     if (c.approved) parts.push('<span><i class="tick approved"></i>승인 ' + c.approved + '</span>');
     if (c.rejected) parts.push('<span><i class="tick rejected"></i>반려 ' + c.rejected + '</span>');
-    if (hiddenHere) parts.push('<span class="p-hidden">숨김 ' + hiddenHere + '</span>');
+    if (hiddenHere && items.length) parts.push('<span class="p-hidden">숨김 ' + hiddenHere + '</span>');
     var dim = FILTER !== 'all' && shown === 0 ? ' style="opacity:.45"' : '';
     var counts = parts.length ? parts.join('') : '<span>' + (hiddenHere ? '숨긴 항목만 있음' : '작업 없음') + '</span>';
+    var pctText = items.length ? pct + '%' : '—';
     return '<li>' +
       '<button class="p-card" type="button" data-platform="' + esc(p.id) + '" style="--c:' + esc(p.color || '#6C5CE7') + '"' + dim + '>' +
         '<span class="p-emoji" style="--c:' + esc(p.color || '#6C5CE7') + '">' + esc(p.emoji || '📁') + '</span>' +
@@ -389,7 +390,7 @@
           '<span class="p-counts">' + counts + '</span>' +
           '<span class="p-bar"><i style="width:' + pct + '%"></i></span>' +
         '</span>' +
-        '<span class="p-pct">' + pct + '%</span>' +
+        '<span class="p-pct">' + pctText + '</span>' +
         '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>' +
       '</button></li>';
   }
@@ -458,7 +459,7 @@
     if (c.review) pills.push('<span class="pill"><i class="review"></i>심사중 ' + c.review + '</span>');
     if (c.approved) pills.push('<span class="pill"><i class="approved"></i>승인 완료 ' + c.approved + '</span>');
     if (c.rejected) pills.push('<span class="pill"><i class="rejected"></i>반려·보완 ' + c.rejected + '</span>');
-    pills.push('<span class="pill">진행률 ' + pct + '%</span>');
+    pills.push('<span class="pill">진행률 ' + (items.length ? pct + '%' : '—') + '</span>');
 
     var head = '<div class="d-head" style="--c:' + esc(p.color || '#6C5CE7') + '">' +
       '<div class="d-head-top">' +
