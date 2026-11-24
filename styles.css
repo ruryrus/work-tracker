@@ -623,9 +623,9 @@ main { padding: 4px 18px 40px; }
 /* ── 숨김(삭제) 버튼 ───────────────────────────────── */
 .i-hide {
   flex: none;
-  width: 28px;
-  height: 28px;
-  margin: -3px -3px 0 0;
+  width: 32px;
+  height: 32px;
+  margin: -5px -5px 0 0;
   padding: 0;
   display: grid;
   place-items: center;
@@ -640,8 +640,8 @@ main { padding: 4px 18px 40px; }
 .i-hide:active { color: var(--rejected); background: var(--rejected-bg); }
 @media (hover: hover) { .i-hide:hover { color: var(--rejected); background: var(--surface-2); } }
 .i-hide svg {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.7;

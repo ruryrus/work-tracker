@@ -490,7 +490,7 @@
         '<button type="button" data-clear-filter>전체 보기</button></p>';
     }
 
-    var hiddenNote = hiddenHere
+    var hiddenNote = hiddenHere && items.length
       ? '<p class="d-hidden">이 플랫폼에서 숨긴 항목 ' + hiddenHere + '개' +
         '<button type="button" data-open-hidden>보기</button></p>'
       : '';
