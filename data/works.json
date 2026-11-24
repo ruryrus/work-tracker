@@ -3,7 +3,7 @@
   "app": {
     "title": "지예 작업 현황",
     "subtitle": "스톡·이모티콘·프린터블 부업 진행판",
-    "updatedAt": "2026-11-24T13:45:00+09:00",
+    "updatedAt": "2026-11-24T14:35:00+09:00",
     "timezone": "Asia/Seoul"
   },
   "statusOrder": ["user_action", "review", "approved", "rejected"],
@@ -220,13 +220,32 @@
     {
       "id": "adobe",
       "name": "어도비 스톡",
-      "studio": "Contributor (졔졔)",
+      "studio": "계정 삭제 요청 접수 · Adobe ID 유지",
       "emoji": "🖌️",
       "color": "#FA0F00",
-      "link": "https://contributor.stock.adobe.com/en/uploads",
-      "linkLabel": "어도비 스톡 업로드",
-      "note": "11-24 13:42 기준: In review 4건 · Not accepted 12건 · 포트폴리오 승인 0건. 2차 4종은 전부 미승인으로 종결(Similar content 2 · Quality Issues 2). 심사는 최대 8주 안내. 4MP 이상 · sRGB · 'Created using generative AI tools' 체크 · 키워드 40개. 같은 파일·업스케일 보완 재제출은 반복 실패 위험.",
+      "link": "https://contributor.stock.adobe.com/en/contact",
+      "linkLabel": "어도비 스톡 문의(고객센터)",
+      "note": "🗑️ 11-24 14:31 판매자(콘트리뷰터) 계정 삭제 요청 제출 완료 — Case ID ADB-48198255-X1C4. Adobe ID(account.adobe.com)는 유지하기로 해서 통합 계정 삭제는 하지 않음. 공개 에셋 0 · 미지급 수익 $0 · 유료 플랜 없음이라 잃은 것 없음. 제출 경로: contributor.stock.adobe.com/en/contact → Account → Delete account (Subject `Account - Delete account`). 아래 항목들은 삭제 요청 전 기록(3차 4종은 마지막 확인 시 In review였고, 계정 삭제로 추적 종료).",
       "items": [
+        {
+          "id": "adobe-close",
+          "title": "판매자 계정 삭제 요청",
+          "subtitle": "접수 완료 · Adobe ID는 유지 (통합 계정 삭제 안 함)",
+          "status": "review",
+          "meta": "Case ID ADB-48198255-X1C4 · 2026-11-24 14:31 접수 · Member ID 213757393 · tatahjiye@gmail.com · display name Flatit",
+          "owner": "Adobe 지원팀 처리 대기",
+          "updatedAt": "2026-11-24",
+          "steps": [
+            { "label": "어도비 스톡 포기 결정 (3차까지 미승인 반복)", "state": "done", "date": "11-24" },
+            { "label": "삭제 영향 확인 (공개 에셋 0 · 미지급 수익 $0 · 유료 플랜 없음)", "state": "done", "date": "11-24" },
+            { "label": "지예 님 선택: 판매자 계정만 삭제 요청 · Adobe ID 유지", "state": "done", "date": "11-24" },
+            { "label": "고객센터 양식 Account → Delete account 제출 (CAPTCHA 없음)", "state": "done", "date": "11-24 14:31" },
+            { "label": "Adobe 지원팀 처리 · 계정 삭제 확인 회신", "state": "current" }
+          ],
+          "nextAction": "Adobe 회신 확인 — 삭제 완료 메일 오면 지예 님께 알림",
+          "note": "접수 화면: \"Your case has been submitted successfully.\" / Case ID ADB-48198255-X1C4 / \"Our team is reviewing your request…\". 스크린샷: work/adobe_stock_delete/2026-11-24_어도비스톡_삭제요청_접수_ADB-48198255-X1C4.png",
+          "files": ["work/adobe_stock_delete/"]
+        },
         {
           "id": "adobe-v3",
           "title": "3차 신규 4종",
@@ -243,8 +262,8 @@
             { "label": "제출 완료 → In review", "state": "current" },
             { "label": "승인 → 포트폴리오 첫 승인", "state": "todo" }
           ],
-          "nextAction": "심사 결과 확인 (매일 14:05 자동 점검)",
-          "note": "스크린샷: browser/adobe_stock_v3_in_review_6-2026-11-23-145755.png · 이번 4건은 다 카테고리를 나눠 유사 콘텐츠 거절을 피하려는 시도.",
+          "nextAction": "없음 — 계정 삭제 요청 접수로 심사 추적 종료",
+          "note": "스크린샷: browser/adobe_stock_v3_in_review_6-2026-11-23-145755.png · 이번 4건은 다 카테고리를 나눠 유사 콘텐츠 거절을 피하려는 시도. 11-24 지예 님이 어도비 스톡 포기 → 계정 삭제 요청으로 이 4건의 심사 결과는 더 보지 않음.",
           "files": ["downloads/adobe_stock_v3/"]
         },
         {
