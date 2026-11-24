@@ -242,7 +242,7 @@
             { "label": "고객센터 양식 Account → Delete account 제출 (CAPTCHA 없음)", "state": "done", "date": "11-24 14:31" },
             { "label": "Adobe 지원팀 처리 · 계정 삭제 확인 회신", "state": "current" }
           ],
-          "nextAction": "Adobe 회신 확인 — 삭제 완료 메일 오면 지예 님께 알림",
+          "nextAction": "Adobe 회신은 tatahjiye@gmail.com으로 옴 — 메일이 연결돼 있지 않아 자동 확인은 불가 (원하시면 메일 연결해서 제가 확인)",
           "note": "접수 화면: \"Your case has been submitted successfully.\" / Case ID ADB-48198255-X1C4 / \"Our team is reviewing your request…\". 스크린샷: work/adobe_stock_delete/2026-11-24_어도비스톡_삭제요청_접수_ADB-48198255-X1C4.png",
           "files": ["work/adobe_stock_delete/"]
         },
