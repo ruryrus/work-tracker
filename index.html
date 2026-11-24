@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>지예 작업 현황</title>
+  <meta name="description" content="스톡·이모티콘·프린터블 부업 진행 상황을 플랫폼별로 한눈에 보는 작업판" />
+  <meta name="theme-color" content="#3D3A6B" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="작업 현황" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icons/favicon-64.png" sizes="64x64" />
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon-180.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="top-row">
+        <div class="brand">
+          <p class="eyebrow">작업 현황판</p>
+          <h1 id="app-title">지예 작업 현황</h1>
+        </div>
+        <button id="refresh" class="refresh" type="button" aria-label="새로 고침">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6" /></svg>
+        </button>
+      </div>
+      <p class="updated"><span id="updated-at">불러오는 중…</span><span id="net-state" class="net" hidden>오프라인</span></p>
+
+      <div class="stats" id="stats" role="group" aria-label="전체 요약"></div>
+    </header>
+
+    <nav class="chips" id="chips" aria-label="상태 필터"></nav>
+
+    <main id="main">
+      <section id="home-view" aria-live="polite">
+        <p class="section-label" id="platform-label"></p>
+        <ul class="platform-list" id="platform-list"></ul>
+      </section>
+
+      <section id="detail-view" hidden aria-live="polite">
+        <button class="back" id="back" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+          플랫폼 전체
+        </button>
+        <div id="detail-body"></div>
+      </section>
+
+      <p class="foot">data/works.json 만 고치면 앱에 바로 반영됩니다.</p>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
