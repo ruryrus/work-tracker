@@ -3,7 +3,7 @@
   "app": {
     "title": "지예 작업 현황",
     "subtitle": "스톡·이모티콘·프린터블 부업 진행판",
-    "updatedAt": "2026-11-25T14:04:00+09:00",
+    "updatedAt": "2026-11-25T15:40:00+09:00",
     "timezone": "Asia/Seoul"
   },
   "statusOrder": [
@@ -195,7 +195,7 @@
       "color": "#6C5CE7",
       "link": "https://designhub.miricanvas.com",
       "linkLabel": "디자인허브 열기",
-      "note": "11-25 14:03 확인: 승인 28건(오전 PNG 3건 + 오후 SVG 6건 전원 승인) · 심사 대기 11/20(빈자리 9) · 수정 요청 0 · 거부 0. 제출분은 영업일 6일 이내 심사 안내. 기준은 350dpi 이상 · 투명 PNG · 사방 여백 0px 타이트 크롭 · AI 생성 체크 · 키워드 25개. SVG는 요소당 패스 30개·파일 150KB 이하 제약.",
+      "note": "11-25 15:36 확인: 승인 28건 · 심사 대기 20/20(빈자리 0) · 수정 요청 0 · 거부 0. 11-25 신규 전통·새해 9종(38~46) 제출 완료 — PNG 요소·프리미엄·생성형 AI 체크·키워드 25/25, 제출 후 9건 전수 재확인. 제출분은 영업일 6일 이내 심사 안내. 기준은 350dpi 이상 · 투명 PNG · 사방 여백 0px 타이트 크롭 · AI 생성 체크 · 키워드 25개. SVG는 요소당 패스 30개·파일 150KB 이하 제약.",
       "items": [
         {
           "id": "mc-approved19",
@@ -403,6 +403,45 @@
           "note": "증빙: downloads/designhub_traditional_261124/심사제출_스크린샷_심사대기20건.png · 미리보기 미리보기_전통4종.png",
           "files": [
             "downloads/designhub_traditional_261124/"
+          ]
+        },
+        {
+          "id": "mc-traditional9",
+          "title": "전통·새해 시즌 9종",
+          "subtitle": "떡국 · 사물놀이 장구 · 하회탈 · 방패연과 얼레 · 소반 다과상 · 문방사우 · 한옥과 감나무 · 색동 한복 · 해돋이와 학 민화",
+          "status": "review",
+          "meta": "PNG 9건 · uni_261125_tatahjiye_38~46 · 프리미엄 · 키워드 25",
+          "owner": "심사 대기",
+          "updatedAt": "2026-11-25",
+          "steps": [
+            {
+              "label": "빈 자리 9개 확인 (심사 대기 11/20, SVG 6종 전원 승인)",
+              "state": "done",
+              "date": "11-25 14:03"
+            },
+            {
+              "label": "기존 제출분과 겹치지 않는 9종 제작·검수 (350dpi · 투명 · 여백 0px)",
+              "state": "done",
+              "date": "11-25 14:30"
+            },
+            {
+              "label": "9건 업로드·메타데이터 입력 후 제출 (15:20~15:35)",
+              "state": "done",
+              "date": "11-25 15:35"
+            },
+            {
+              "label": "심사중 (20/20 상한)",
+              "state": "current"
+            },
+            {
+              "label": "승인 → 판매 개시",
+              "state": "todo"
+            }
+          ],
+          "nextAction": "심사 결과 확인 (매일 14:00 자동 점검) · 승인으로 자리가 나면 추가 제출",
+          "note": "증빙: downloads/designhub_traditional_261125/심사제출_스크린샷_심사대기20건.png · 메타데이터.md",
+          "files": [
+            "downloads/designhub_traditional_261125/"
           ]
         },
         {
