@@ -3,7 +3,7 @@
   "app": {
     "title": "지예 작업 현황",
     "subtitle": "스톡·이모티콘·프린터블 부업 진행판",
-    "updatedAt": "2026-11-25T15:40:00+09:00",
+    "updatedAt": "2026-11-27T00:58:00+09:00",
     "timezone": "Asia/Seoul"
   },
   "statusOrder": [
@@ -934,12 +934,12 @@
       "items": [
         {
           "id": "kmong-book",
-          "title": "겨울방학 유아 놀이북 30장 본편",
-          "subtitle": "기획·샘플·리디자인 완료 → 제작 착수 컨펌만 남음",
+          "title": "겨울방학 하루 한 장 놀이북 30장 (완성본)",
+          "subtitle": "30장 완성 · 크몽 등록만 남음",
           "status": "user_action",
-          "meta": "30장 · A4 300dpi · 만 5~7세 · 컬러 + 흑백 저잉크",
-          "owner": "지예 님 컨펌 대기",
-          "updatedAt": "2026-11-23",
+          "meta": "30장 · A4 300dpi(2480×3508) · 만 5~7세 · 컬러 PDF + 흑백 저잉크 PDF + 미리보기",
+          "owner": "지예 님 (크몽 등록)",
+          "updatedAt": "2026-11-27",
           "steps": [
             {
               "label": "크몽·Etsy 시장 조사",
@@ -952,27 +952,35 @@
               "date": "11-23"
             },
             {
-              "label": "파스텔 손그림 일러스트 10종으로 30장 시안 리디자인",
+              "label": "파스텔 손그림 일러스트로 30장 시안 리디자인",
               "state": "done",
               "date": "11-23"
             },
             {
-              "label": "지예 님 제작 착수 컨펌",
+              "label": "귀여운 치비 파스텔 일러스트 18종 새로 제작(누끼·300dpi)",
+              "state": "done",
+              "date": "11-27"
+            },
+            {
+              "label": "A4 30장 본편 제작(미로 BFS·스도쿠 유일해·낱말퍼즐 배치 검증)",
+              "state": "done",
+              "date": "11-27"
+            },
+            {
+              "label": "컬러 PDF 30p · 흑백 저잉크 PDF 30p · 미리보기 시트 · ZIP",
+              "state": "done",
+              "date": "11-27"
+            },
+            {
+              "label": "크몽 상세페이지 등록 (제목·가격 8,900원, 런칭 7,900원)",
               "state": "current"
-            },
-            {
-              "label": "본편 30장 PDF (컬러 + 흑백 저잉크)",
-              "state": "todo"
-            },
-            {
-              "label": "크몽 상세페이지 · Etsy 등록",
-              "state": "todo"
             }
           ],
-          "nextAction": "컨펌만 주면 30장 본편 제작 착수",
-          "note": "샘플 3장(표지·미로찾기·루틴스티커판) + 영문 표지 + 흑백 인쇄 시뮬레이션까지 검수 완료. 판매가는 크몽·Etsy 각 채널에 맞춰 따로 정리.",
+          "nextAction": "크몽 자료·템플릿 > 교육 자료에 등록 (미리보기 이미지 5장 이상)",
+          "note": "완성 파일: downloads/winter_playbook_final/final/ — 컬러 PDF 29.0MB · 흑백 PDF 13.0MB · 미리보기 시트 png · 정사각형 대표이미지 · 세트 ZIP 38.4MB. 흑백에서도 다른 그림 찾기 5곳이 모두 보이도록 색 대신 방향 차이로 바꿔 검수. AI 고지 문구는 p.30 판권에 포함.",
           "files": [
-            "downloads/winter_printable_sample/"
+            "downloads/winter_playbook_final/final/",
+            "downloads/winter_playbook_final/pages/"
           ]
         },
         {
