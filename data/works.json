@@ -3,7 +3,7 @@
   "app": {
     "title": "지예 작업 현황",
     "subtitle": "스톡·이모티콘·프린터블 부업 진행판",
-    "updatedAt": "2026-11-27T12:25:00+09:00",
+    "updatedAt": "2026-11-27T13:20:00+09:00",
     "timezone": "Asia/Seoul"
   },
   "statusOrder": [
@@ -942,6 +942,51 @@
       "linkLabel": "크몽 열기",
       "note": "크몽 유아 활동지 시장은 5,000~15,000원대, Etsy는 A4+US Letter·컬러+저잉크 동시 구성이 기본. Etsy는 한국 셀러 Payoneer 수취 계좌와 AI 생성 고지가 필요하고, AI로 만든 기능성 지침은 판매 금지.",
       "items": [
+        {
+          "id": "kmong-2027cal",
+          "title": "2027 월간 캘린더 프린터블 PDF",
+          "subtitle": "크몽 심사 제출 완료 · #881170",
+          "status": "review",
+          "meta": "자료·템플릿 > 디자인 템플릿 > 기타 · A4 13페이지 컬러+잉크절약 PDF 2종 · 등록 이미지 3장(1200×1200) · 검색 키워드 5개",
+          "owner": "크몽 심사 대기",
+          "updatedAt": "2026-11-27",
+          "steps": [
+            {
+              "label": "프로필 '플랫잇' 설정 (전문분야 디자인>인쇄·홍보물 · 보유기술 전자책(PDF) 제작 및 출판 · 소개)",
+              "state": "done",
+              "date": "11-27"
+            },
+            {
+              "label": "전문가 인증 완료 (본인인증 · 인증 정보 등록)",
+              "state": "done",
+              "date": "11-27"
+            },
+            {
+              "label": "서비스 제목·카테고리·설명·가격·파일·이미지·태그 입력",
+              "state": "done",
+              "date": "11-27"
+            },
+            {
+              "label": "심사 제출 (#881170 · 승인 전)",
+              "state": "done",
+              "date": "11-27 13:17"
+            },
+            {
+              "label": "크몽 심사 (영업일 7일 이내)",
+              "state": "current",
+              "date": "11-27"
+            },
+            {
+              "label": "승인 → 판매 개시",
+              "state": "todo"
+            }
+          ],
+          "nextAction": "심사 결과 확인 (2026-11-27 제출 · 영업일 7일 이내)",
+          "note": "제출 PDF는 ZIP 1개로 업로드(크몽 패키지당 파일 1개 제한) — 컬러·잉크절약 PDF 2종 + NotoSansKR_OFL.txt. 메인 이미지는 크몽 규격 652x488로 변환해 업로드. 심사 중에는 편집 불가(수정하려면 제출 취소 후 재제출). 증빙: downloads/kmong_2027_calendar/kmong_등록완료_스크린샷.png · kmong_내서비스_승인전_스크린샷.png",
+          "files": [
+            "downloads/kmong_2027_calendar/"
+          ]
+        },
         {
           "id": "kmong-book",
           "title": "겨울방학 하루 한 장 놀이북 30장 (완성본)",
